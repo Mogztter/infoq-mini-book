@@ -23,6 +23,7 @@
     "watch": "npm run watch:all",
     "watch:adoc": "bash ./gradlew --continuous html",
     "watch:html": "nodemon ./watch.js",
+    "watch:site": "node watch-site.js",
     "watch:all": "concurrently --kill-others \"npm run watch:adoc\" \"npm run watch:html\"",
     "release": "release-it"
   },
@@ -30,6 +31,7 @@
     "@antora/cli": "^2.3.4",
     "@release-it/bumper": "2.0.0",
     "browser-sync": "2.26.14",
+    "chokidar": "^3.5.1",
     "concurrently": "6.0.0",
     "mini-book-site-generator": "git+https://github.com/Mogztter/mini-book-site-generator.git#main",
     "nodemon": "2.0.7",
